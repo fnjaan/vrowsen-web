@@ -1,0 +1,116 @@
+ * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ a {
+    color: #DE9E48;
+ }
+
+a:hover {
+   color: #fff;
+   text-decoration: none;
+}
+
+.ct-color-lightgray {
+   background-color: #ddd;
+}
+
+ .nav-link {
+    color: #DE9E48;
+ }
+
+ .ct-color-darkbrown {
+    color: #8E5630;
+ }
+
+ .ct-color-lightbrown {
+   color: #DE9E48;;
+}
+ .nav-link:hover {
+    color: #FFF;
+ }
+
+ .ct-text-adjust {
+    font-size: 14pt;
+ }
+
+ .ct-bg-lightgray {
+     background-color: #eee;
+ }
+
+ .container {
+    padding: 0px;
+ }
+
+ .remove-list-style {
+   float: right;
+   list-style-type: none;
+   display: inline;
+ }
+
+ .remove-list-style li{
+   padding: 10px;
+   display: inline;
+}
+
+.venue-header {
+   padding-top: 4rem;
+   padding-bottom: 0.5rem;
+}
+
+.dropdown-menu {
+  width: 370px;
+  left: -250px;
+}
+
+
+footer {
+   width: 100%;
+   /* position: absolute; */
+   bottom: 0;
+   left: 0;
+}
+
+@media (min-width: 992px) {
+   .animate {
+     animation-duration: 0.3s;
+     -webkit-animation-duration: 0.3s;
+     animation-fill-mode: both;
+     -webkit-animation-fill-mode: both;
+   }
+ }
+ 
+ @keyframes slideIn {
+   0% {
+     transform: translateY(1rem);
+     opacity: 0;
+   }
+   100% {
+     transform:translateY(0rem);
+     opacity: 1;
+   }
+   0% {
+     transform: translateY(1rem);
+     opacity: 0;
+   }
+ }
+ 
+ @-webkit-keyframes slideIn {
+   0% {
+     -webkit-transform: transform;
+     -webkit-opacity: 0;
+   }
+   100% {
+     -webkit-transform: translateY(0);
+     -webkit-opacity: 1;
+   }
+   0% {
+     -webkit-transform: translateY(1rem);
+     -webkit-opacity: 0;
+   }
+ }
+ 
+ .slideIn {
+   -webkit-animation-name: slideIn;
+   animation-name: slideIn;
+ }
