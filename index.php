@@ -97,8 +97,5 @@
     <script src="_resources/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="_resources/pagination/2.1.5/pagination.min.js"></script>
     <script src="_assets/js/most-rated.js"></script>
-
-    <!--TEMPLATE for most rated list-->
-    <?php require_once 'includes/jstemplate.php';?>
 </body>
 </html>

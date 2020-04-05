@@ -24,12 +24,26 @@ $(document).ready(function(){
 });
 
 function template(data) {
-    let source = $('#rating-template').html();
-    let template = Handlebars.compile(source);
     $('.remove-list-style li').addClass('btn btn-outline-secondary px-3 mx-1 text-dark');
     var html = '<ul class="list-group text-light">';
     $.each(data, function(index, item){
-        html += template(item);
+        html += `<li class="list-group-item rounded bg-dark mb-4 " venue-id="`+ item.id +`">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="./_assets/imgs/no-image.png" height="210"alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card bg-dark ct-color-lightbrown">
+                                <a class="card-header" href="#">`+item.name+`</a>
+                                <div class="card-body text-light">
+                                    <p>No. of people:`+item.capacity+`</p>
+                                    <p>Allowed events:`+item.eventtype+`</p>
+                                    <p>Rating `+item.rating+`/10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>`;
     });
     html += '</ul>';
     return html;
